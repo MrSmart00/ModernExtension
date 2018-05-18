@@ -10,6 +10,7 @@ import Foundation
 
 public protocol ModernExtension {
     associatedtype T
+    static var ex: T.Type { get }
     var ex: T { get }
 }
 
@@ -21,6 +22,10 @@ public final class Extension<Base> {
 }
 
 public extension ModernExtension {
+    public static var ex: Extension<Self>.Type {
+        return Extension<Self>.self
+    }
+    
     public var ex: Extension<Self> {
         return Extension(base: self)
     }
@@ -32,6 +37,7 @@ extension Extension where Base == String {
     public var count: Int {
         return base.count
     }
+    public static let test = "かきくけこ"
 }
 
 extension Int: ModernExtension {}

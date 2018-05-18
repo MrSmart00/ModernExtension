@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         let text = "あいうえお"
         label1.text = text
         label2.text = text.ex.count.ex.string
+        label3.text = String.ex.test
         // Do any additional setup after loading the view, typically from a nib.
     }
 
