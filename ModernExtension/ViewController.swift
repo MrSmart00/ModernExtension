@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var label1: UILabel!
+    @IBOutlet private weak var label2: UILabel!
+    @IBOutlet private weak var label3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let text = "あいうえお"
+        label1.text = text
+        label2.text = text.ex.count.ex.string
         // Do any additional setup after loading the view, typically from a nib.
     }
 

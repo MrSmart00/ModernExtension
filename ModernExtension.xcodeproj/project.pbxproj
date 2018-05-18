@@ -14,6 +14,7 @@
 		C5679E5720AEB8C7006B5814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5679E5520AEB8C7006B5814 /* LaunchScreen.storyboard */; };
 		C5679E6220AEB8C8006B5814 /* ModernExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5679E6120AEB8C8006B5814 /* ModernExtensionTests.swift */; };
 		C5679E6D20AEB8C8006B5814 /* ModernExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5679E6C20AEB8C8006B5814 /* ModernExtensionUITests.swift */; };
+		C5679E7C20AEBD31006B5814 /* ModernExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5679E7B20AEBD31006B5814 /* ModernExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C5679E6820AEB8C8006B5814 /* ModernExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModernExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5679E6C20AEB8C8006B5814 /* ModernExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernExtensionUITests.swift; sourceTree = "<group>"; };
 		C5679E6E20AEB8C8006B5814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5679E7B20AEBD31006B5814 /* ModernExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		C5679E4B20AEB8C7006B5814 /* ModernExtension */ = {
 			isa = PBXGroup;
 			children = (
+				C5679E7A20AEBC0F006B5814 /* Extensions */,
 				C5679E4C20AEB8C7006B5814 /* AppDelegate.swift */,
 				C5679E4E20AEB8C7006B5814 /* ViewController.swift */,
 				C5679E5020AEB8C7006B5814 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				C5679E6E20AEB8C8006B5814 /* Info.plist */,
 			);
 			path = ModernExtensionUITests;
+			sourceTree = "<group>";
+		};
+		C5679E7A20AEBC0F006B5814 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5679E7B20AEBD31006B5814 /* ModernExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5679E7C20AEBD31006B5814 /* ModernExtension.swift in Sources */,
 				C5679E4F20AEB8C7006B5814 /* ViewController.swift in Sources */,
 				C5679E4D20AEB8C7006B5814 /* AppDelegate.swift in Sources */,
 			);
